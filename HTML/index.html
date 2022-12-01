@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <script defer src="../Javascript/database.js"></script>
+    <script defer src="../Javascript/script.js"></script>
+    <title>Film Finder</title>
+  </head>
+  <body>
+    <h2>Winc Film Finder</h2>
+    <nav>
+      <div>
+        <input type="radio" id="new" name="filter" value="new" />
+        <label for="new">New movies</label>
+      </div>
+      <div>
+        <input type="radio" id="avenger" name="filter" value="avenger" />
+        <label for="avenger">Avenger movies</label>
+      </div>
+      <div>
+        <input type="radio" id="xmen" name="filter" value="xmen" />
+        <label for="xmen">X-Men movies</label>
+      </div>
+      <div>
+        <input type="radio" id="princess" name="filter" value="princess" />
+        <label for="princess">Princess movies</label>
+      </div>
+      <div>
+        <input type="radio" id="batman" name="filter" value="batman" />
+        <label for="batman">Batman movies</label>
+      </div>
+      <div>
+        <input
+          type="text"
+          id="searchbar"
+          onkeyup="myFunction()"
+          placeholder="Search for a movie"
+        />
+      </div>
+    </nav>
+    <main>
+      <div class="movie-container">
+        <ul id="movie-list"></ul>
+      </div>
+    </main>
+  </body>
+</html>
